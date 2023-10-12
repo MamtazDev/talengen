@@ -1,0 +1,84 @@
+import React from 'react'
+import TeleGenLogo from '../../assets/telegen_logo.svg';
+import { Link } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
+
+const EmployesSignup = () => {
+    return (
+        <div className='main_wrapper'>
+            <div className="section-head text-center mt-3 mb-5">
+                <Image src={TeleGenLogo} alt='logo' />
+                <h2 className='fs-2 fw-semibold text-white mb-4'>
+                    Sign In TalenGen
+                </h2>
+
+                <p className='fs-4 fw-semibold text-white'>
+                    Get Ready to Empower your Recruiting Journey
+                </p>
+            </div>
+
+            <div className="student_alumni">
+                <h2 className='fs-4 fw-bold text-white mb-2'>
+                    Employers & University Counselors
+                </h2>
+
+                <form action="">
+                    <div className='sign-up p-2'>
+                        <label htmlFor="signup" className='text-white mb-2'>
+                            Enter your Preferred Name*
+                        </label>
+                        <div className='input_field mb-2'>
+                            <input type="text" className='w-100 bg-transparent border-white' />
+                        </div>
+                        <div className='input_field mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                                Enter your Current Company/Institution Name*
+                            </label>
+                            <div className='input_field mb-2'>
+                                <input type="text" className='w-100 bg-transparent border-white' />
+                            </div>
+                        </div>
+
+                        <div className='input_field mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                                Enter your Current Position*
+                            </label>
+                            <div className='input_field mb-2'>
+                                <input type="text" className='w-100 bg-transparent border-white' />
+                            </div>
+                        </div>
+
+                        <div className='input_field mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                                Enter your Preferred Contact Number*
+                            </label>
+                            <div className='input_field mb-2'>
+                                <input type="text" className='w-100 bg-transparent border-white' />
+                            </div>
+                        </div>
+
+                        <div className='input_field mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                                Enter your Company/Institution Registration Number*
+                            </label>
+                            <div className='input_field mb-2'>
+                                <input type="text" className='w-100 bg-transparent border-white' />
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div className='sign-up d-flex flex-wrap align-items-center justify-content-between pb-4 mb-4'>
+                        <button className='commn-btn mb-4 mb-md-0'>
+                            Sign Up
+                        </button>
+                      
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
+}
+
+export default EmployesSignup;
