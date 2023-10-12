@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import SignUp from './component/signUp/SignUp';
-import SignIn from './component/signUp/SignIn';
+import SignIn from './component/signIn/SignIn';
 import ResetPassword from './component/resetPassword/ResetPassword';
 import StudentSignup from './component/studentSignup/StudentSignup';
 import EmployesSignup from './component/emplyesSignup/EmployesSignup';
