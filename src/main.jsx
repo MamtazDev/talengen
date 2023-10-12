@@ -16,10 +16,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <SignUp />
   },
+
   {
     path: '/signin',
     element: <SignIn/>
   },
+
   {
     path: '/resetpassword',
     element: <ResetPassword />
@@ -39,6 +41,7 @@ const router = createBrowserRouter([
     path: '/verifyemail',
     element: <VerifyEmail />
   },
+  
   {
     path: '/verifysuccess',
     element: <VerifySuccess />
