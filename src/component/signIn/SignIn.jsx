@@ -23,7 +23,7 @@ const SignIn = () => {
                         Students & Alumni
                     </h2>
 
-                    <form action="">
+                    <div>
                         <div className='sign-up p-2'>
                             <label htmlFor="signup" className='text-white mb-2'>
                                 Enter your Student Email*
@@ -49,7 +49,7 @@ const SignIn = () => {
                                 Forgot your password?
                             </Link>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
                 <div className="student_alumni">

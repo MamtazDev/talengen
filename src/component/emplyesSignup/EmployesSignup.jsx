@@ -22,7 +22,7 @@ const EmployesSignup = () => {
                     Employers & University Counselors
                 </h2>
 
-                <form action="">
+                <div>
                     <div className='sign-up p-2'>
                         <label htmlFor="signup" className='text-white mb-2'>
                             Enter your Preferred Name*
@@ -73,9 +73,9 @@ const EmployesSignup = () => {
                         <button className='commn-btn mb-4 mb-md-0'>
                             Sign Up
                         </button>
-                      
+
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     )

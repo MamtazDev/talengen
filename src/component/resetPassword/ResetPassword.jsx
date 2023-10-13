@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 
 const ResetPassword = () => {
     const [resetPassword, setResetPassword] = useState(false);
-
     const handleResetPassword = () => {
         setResetPassword(true);
     };
 
     return (
-        <div className={resetPassword ? 'reset_wrapper d-flex align-items-center' : 'reset_wrapper d-flex align-items-center'}>
+        <div className={resetPassword ? 'reset_wrapper align-items-center' : 'reset_wrapper d-flex align-items-center'}>
             <div className='resent-content'>
                 {resetPassword ? (
-                    <>
+                    <div style={{marginTop: '207px'}}>
                         <div className='text-center'>
                             <h2 className='fs-3 fw-semibold text-white mb-4'>
                                 Reset your Password
@@ -40,7 +39,7 @@ const ResetPassword = () => {
                                 <input type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
-                    </>
+                    </div>
                 ) : (
                     <>
                         <div className='text-center'>

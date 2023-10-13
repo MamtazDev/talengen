@@ -8,7 +8,7 @@ const Employers = () => {
                 Employers & University Counselors
             </h2>
 
-            <form action="">
+            <div>
                 <div className='mb-3 p-2'>
                     <label htmlFor="signup" className=' fs-6 text-white mb-2'>
                         Enter your work email to sign up*
@@ -38,13 +38,15 @@ const Employers = () => {
 
                 <div className='sign-up d-flex flex-wrap align-items-center justify-content-between'>
                     <button className='commn-btn text-white border-0 mb-4 mb-md-0'>
-                        Sign Up
+                        <Link to={"/employesignup"} className='text-decoration-none text-white'>
+                            Sign Up
+                        </Link>
                     </button>
-                    <Link to={"/signin"} className=' text-decoration-none text-white'>
+                    <Link to={"/signin"} className='text-decoration-none text-white'>
                         Already have an account? Sign in
                     </Link>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }
