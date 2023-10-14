@@ -66,6 +66,7 @@ const StudentSignup = () => {
                             <div className='input_field mb-2'>
                                 <select className='w-100 bg-transparent border-white' name="" id="">
                                     <option value="">Select Graduation Year</option>
+                                    <option value="2022">2022</option>
                                 </select>
                             </div>
                         </div>
