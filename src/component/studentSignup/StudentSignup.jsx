@@ -50,6 +50,48 @@ const options = [
     { value: '(APU)', label: 'Asia Pacific University of Technology and Innovation(APU)' }
 ]
 
+const options2 = [
+    { value: '2022', label: '2022' },
+    { value: '2023', label: '2023' },
+    { value: '2024', label: '2024' },
+    { value: '2025', label: '2025' },
+    { value: '2026', label: '2026' },
+    { value: '2027', label: '2027' },
+    { value: '2028', label: '2028' },
+    { value: '2029', label: '2029' },
+    { value: '2030', label: '2030' },
+    { value: '2031', label: '2031' },
+    { value: '2032', label: '2032' },
+    { value: '2033', label: '2033' },
+    { value: '2034', label: '2034' },
+    { value: '2035', label: '2035' },
+    { value: '2036', label: '2036' },
+    { value: '2037', label: '2037' },
+    { value: '2038', label: '2038' },
+    { value: '2039', label: '2039' },
+    { value: '2040', label: '2040' },
+    { value: '2041', label: '2041' },
+    { value: '2042', label: '2042' },
+    { value: '2043', label: '2043' },
+    { value: '2044', label: '2044' },
+    { value: '2045', label: '2045' },
+    { value: '2046', label: '2046' },
+    { value: '2047', label: '2047' },
+    { value: '2048', label: '2048' },
+    { value: '2049', label: '2049' },
+    { value: '2050', label: '2050' },
+    { value: '2051', label: '2051' },
+    { value: '2052', label: '2052' },
+    { value: '2053', label: '2053' },
+    { value: '2054', label: '2054' },
+    { value: '2055', label: '2055' },
+    { value: '2056', label: '2056' },
+    { value: '2057', label: '2057' },
+    { value: '2058', label: '2058' },
+    { value: '2059', label: '2059' },
+    { value: '2060', label: '2060' },
+]
+
 
 const StudentSignup = () => {
     return (
@@ -101,18 +143,61 @@ const StudentSignup = () => {
                                 Current/Past Institution*
                             </label>
                             <div className='input_field mb-2'>
-                                {/* <select className='w-100 bg-transparent border-white' name="" id="">
-                                    <option value="">Select University</option>
-                                    <option value="">
-                                        University Malaya (UM)
-                                    </option>
-                                </select> */}
-                                <Select options={options} styles={{
+
+                                <Select placeholder="Select University" options={options} theme={(theme) => ({
+                                    ...theme,
+                                    borderRadius: 0,
+                                    colors: {
+                                        ...theme.colors,
+                                        primary25: '#FF4700',
+                                        primary: 'black',
+                                    },
+                                })} styles={{
                                     control: (baseStyles, state) => ({
                                         ...baseStyles,
                                         backgroundColor: 'transparant',
-                                        color: state.isSelected ? 'white' : 'white'
+                                        boxShadow: 'white'
                                     }),
+
+                                    dropdownIndicator: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: 'white'
+                                    }),
+
+                                    indicatorSeparator: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        display: 'none'
+                                    }),
+
+                                    menu: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        backgroundColor: '#9B1C19',
+
+                                    }),
+
+                                    menuList: (baseStyles, state) => ({
+
+                                        ...baseStyles,
+                                        color: '#fff',
+                                    }),
+
+                                    input: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        border: 'white',
+                                        paddingTop: 0,
+                                        paddingBottom: 0,
+                                        margin: 0
+                                    }),
+
+                                    singleValue: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: 'white'
+                                    }),
+
+                                    placeholder: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: '#ffffff66'
+                                    })
                                 }} />
                             </div>
                         </div>
@@ -122,17 +207,71 @@ const StudentSignup = () => {
                                 Graduation Class*
                             </label>
                             <div className='input_field mb-2'>
-                                <select className='w-100 bg-transparent border-white' name="" id="">
-                                    <option value="">Select Graduation Year</option>
-                                </select>
-                                {/* <Select options={options} /> */}
+
+                                <Select placeholder="Select Graduation Year" options={options2} theme={(theme) => ({
+                                    ...theme,
+                                    borderRadius: 0,
+                                    colors: {
+                                        ...theme.colors,
+                                        primary25: '#FF4700',
+                                        primary: 'black',
+                                    },
+                                })} styles={{
+                                    control: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        backgroundColor: 'transparant',
+                                        boxShadow: 'white'
+                                    }),
+
+                                    dropdownIndicator: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: 'white'
+                                    }),
+
+                                    indicatorSeparator: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        display: 'none'
+                                    }),
+
+                                    menu: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        backgroundColor: '#9B1C19',
+
+                                    }),
+
+                                    menuList: (baseStyles, state) => ({
+
+                                        ...baseStyles,
+                                        color: '#fff',
+                                    }),
+
+                                    input: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        border: 'white',
+                                        paddingTop: 0,
+                                        paddingBottom: 0,
+                                        margin: 0
+                                    }),
+
+                                    singleValue: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: 'white'
+                                    }),
+
+                                    placeholder: (baseStyles, state) => ({
+                                        ...baseStyles,
+                                        color: '#ffffff66'
+                                    })
+                                }} />
                             </div>
                         </div>
                     </div>
 
                     <div className='sign-up d-flex flex-wrap align-items-center justify-content-between pb-4 mb-4'>
                         <button className='commn-btn mb-4 mb-md-0'>
-                            Sign Up
+                            <Link to={'/verifyemail'} className='text-decoration-none text-white'>
+                                Sign Up
+                            </Link>
                         </button>
 
                     </div>

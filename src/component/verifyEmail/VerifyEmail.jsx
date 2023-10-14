@@ -28,7 +28,9 @@ const VerifyEmail = () => {
 
                 <div className='text-center'>
                     <button className='commn-btn mb-4 mb-md-0'>
-                        RESEND VERIFICATION EMAIL
+                        <Link to={'/verifysuccess'} className='text-decoration-none text-white'>
+                            RESEND VERIFICATION EMAIL
+                        </Link>
                     </button>
                 </div>
             </div>

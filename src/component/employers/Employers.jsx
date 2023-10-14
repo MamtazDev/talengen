@@ -10,35 +10,35 @@ const Employers = ({ email, isSubmitted, handleEmailChange, handleSignUpClick })
 
             <div className='ps-2'>
                 <div className='input_field'>
-                    <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                    <label htmlFor="email" className=' fs-6 text-white mb-2'>
                         Enter your work email to sign up*
                     </label>
                     <div className='input_field mb-2'>
-                        <input type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' value={email} onChange={handleEmailChange} />
+                        <input id='email' type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' value={email} onChange={handleEmailChange} />
                     </div>
                 </div>
 
                 <div className='input_field'>
-                    <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                    <label htmlFor="password" className=' fs-6 text-white mb-2'>
                         Password*
                     </label>
                     <div className='input_field mb-2'>
-                        <input type="password" className='w-100 bg-transparent border-white' />
+                        <input id='password' type="password" className='w-100 bg-transparent border-white' />
                     </div>
                 </div>
 
                 <div className='input_field'>
-                    <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                    <label htmlFor="password2" className=' fs-6 text-white mb-2'>
                         Confirm Password*
                     </label>
                     <div className='input_field mb-2'>
-                        <input type="password" className='w-100 bg-transparent border-white' />
+                        <input id='password2' type="password" className='w-100 bg-transparent border-white' />
                     </div>
                 </div>
             </div>
             <div className='sign-up d-flex flex-wrap align-items-center justify-content-between'>
                 <button className='commn-btn text-white border-0 mb-4 mb-md-0'>
-                    <Link to={isSubmitted && "/employesignup"} className='text-decoration-none text-white' onClick={handleSignUpClick}>
+                    <Link to={"/employesignup"} className='text-decoration-none text-white'>
                         Sign Up
                     </Link>
                 </button>
