@@ -25,18 +25,18 @@ const SignIn = () => {
 
                     <div>
                         <div className='sign-up p-2'>
-                            <label htmlFor="signup" className='text-white mb-2'>
+                            <label htmlFor="studentEmail" className='text-white mb-2'>
                                 Enter your Student Email*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
+                                <input id='studentEmail' type="email" className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
                             </div>
                             <div className='input_field mb-2'>
-                                <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                                <label htmlFor="password" className=' fs-6 text-white mb-2'>
                                     Password*
                                 </label>
                                 <div className='input_field mb-2'>
-                                    <input type="text" className='w-100 bg-transparent border-white' />
+                                    <input id='password' type="password" className='w-100 bg-transparent border-white' />
                                 </div>
                             </div>
                         </div>
@@ -58,21 +58,21 @@ const SignIn = () => {
                     </h2>
 
                     <div>
-                        <div className='mb-3 p-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                        <div className='ps-2'>
+                            <label htmlFor="workEmail" className=' fs-6 text-white mb-2'>
                                 Enter your Work Email*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' />
+                                <input id='workEmail' type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' />
                             </div>
                         </div>
 
-                        <div className='mb-3 p-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                        <div className='ps-2'>
+                            <label htmlFor="password2" className=' fs-6 text-white mb-2'>
                                 Enter your Password*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='password2' type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 

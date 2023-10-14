@@ -12,7 +12,7 @@ const ResetPassword = () => {
         <div className={resetPassword ? 'reset_wrapper align-items-center' : 'reset_wrapper d-flex align-items-center'}>
             <div className='resent-content'>
                 {resetPassword ? (
-                    <div style={{marginTop: '207px'}}>
+                    <div style={{ marginTop: '207px' }}>
                         <div className='text-center'>
                             <h2 className='fs-3 fw-semibold text-white mb-4'>
                                 Reset your Password
@@ -22,21 +22,21 @@ const ResetPassword = () => {
                             </p>
                         </div>
 
-                        <div className='sign-up p-2'>
-                            <label htmlFor="signup" className='text-white mb-2'>
+                        <div className='sign-up ps-2'>
+                            <label htmlFor="newPassword" className='text-white mb-2'>
                                 Please enter your new password*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='newPassword' type="password" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
-                        <div className='sign-up p-2'>
-                            <label htmlFor="signup" className='text-white mb-2'>
+                        <div className='sign-up ps-2'>
+                            <label htmlFor="confirmPassword" className='text-white mb-2'>
                                 Please confirm your new password*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='confirmPassword' type="password" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
                     </div>
@@ -53,11 +53,11 @@ const ResetPassword = () => {
                         </div>
 
                         <div className='sign-up p-2'>
-                            <label htmlFor="signup" className='text-white mb-2'>
+                            <label htmlFor="emailAddress" className='text-white mb-2'>
                                 Email Address*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' placeholder='example@gmail.com' />
+                                <input id='emailAddress' type="text" className='w-100 bg-transparent border-white' placeholder='example@gmail.com' />
                             </div>
                         </div>
                     </>

@@ -53,3 +53,19 @@ select {
 select:focus-visible {
     outline: 0;
 }
+
+.css-bnfs8v-control {
+    box-shadow: white !important;
+}
+
+.css-bnfs8v-control:hover {
+    border-color: white !important;
+}
+
+.css-a0pjnj-control:hover {
+    border-color: white !important;
+}
+
+.css-jd7zn9-control{
+    border-color: white !important;
+}

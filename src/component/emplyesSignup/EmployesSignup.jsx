@@ -24,45 +24,45 @@ const EmployesSignup = () => {
 
                 <div>
                     <div className='sign-up p-2'>
-                        <label htmlFor="signup" className='text-white mb-2'>
+                        <label htmlFor="preferredName" className='text-white mb-2'>
                             Enter your Preferred Name*
                         </label>
                         <div className='input_field mb-2'>
-                            <input type="text" className='w-100 bg-transparent border-white' />
+                            <input id='preferredName' type="text" className='w-100 bg-transparent border-white' />
                         </div>
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="currentCompany" className=' fs-6 text-white mb-2'>
                                 Enter your Current Company/Institution Name*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='currentCompany' type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="currentPosition" className=' fs-6 text-white mb-2'>
                                 Enter your Current Position*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='currentPosition' type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="preferredContact" className=' fs-6 text-white mb-2'>
                                 Enter your Preferred Contact Number*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='preferredContact' type="number" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="registrationNumber" className=' fs-6 text-white mb-2'>
                                 Enter your Company/Institution Registration Number*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input id='registrationNumber' type="number" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -71,7 +71,9 @@ const EmployesSignup = () => {
 
                     <div className='sign-up d-flex flex-wrap align-items-center justify-content-between pb-4 mb-4'>
                         <button className='commn-btn mb-4 mb-md-0'>
-                            Sign Up
+                            <Link to={'/verifyemail'} className='text-decoration-none text-white'>
+                                Sign Up
+                            </Link>
                         </button>
 
                     </div>
