@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TeleGenLogo from '../../assets/telegen_logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
 import Select from 'react-select'
+import axios from 'axios';
+
+
 
 const options = [
     { value: '(UM)', label: 'University Malaya(UM)' },
@@ -94,6 +97,35 @@ const options2 = [
 
 
 const StudentSignup = () => {
+
+    const [studentDetails, setStudentDetails ] = useState({
+        username:"",
+        password:"",
+        institude: "",
+        graduation:"",
+        role : "Student",
+        email: localStorage.getItem("student")
+    })
+    const navigate = useNavigate()
+
+
+    const singupHandler = () => {
+        console.log("studentDetails",studentDetails);
+
+        axios.post('http://localhost:8000/api/v1/users/signup', studentDetails)
+        .then(response => {
+          // Handle the successful response here
+          console.log('POST request successful:', response);
+        })
+        .catch(error => {
+          // Handle any errors that occurred during the POST request
+          console.error('Error making POST request:', error);
+        });
+
+        navigate('/verifyemail');
+    }
+
+
     return (
         <div className='main_wrapper'>
             <div className="section-head text-center mt-3 mb-5">
@@ -118,14 +150,14 @@ const StudentSignup = () => {
                             Enter your Preferred Name*
                         </label>
                         <div className='input_field mb-2'>
-                            <input type="text" className='w-100 bg-transparent border-white' />
+                            <input onBlur={(e) => setStudentDetails({...studentDetails, username:e.target.value })} type="text" className='w-100 bg-transparent border-white' />
                         </div>
                         <div className='input_field mb-2'>
                             <label htmlFor="signup" className=' fs-6 text-white mb-2'>
                                 Enter Password*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input  onBlur={(e) => setStudentDetails({...studentDetails, password:e.target.value })}  type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -144,7 +176,8 @@ const StudentSignup = () => {
                             </label>
                             <div className='input_field mb-2'>
 
-                                <Select placeholder="Select University" options={options} theme={(theme) => ({
+                                <input  onBlur={(e) => setStudentDetails({...studentDetails, institude:e.target.value })}  type="text" className='w-100 bg-transparent border-white' />
+                                {/* <Select placeholder="Select University" options={options} theme={(theme) => ({
                                     ...theme,
                                     borderRadius: 0,
                                     colors: {
@@ -198,7 +231,7 @@ const StudentSignup = () => {
                                         ...baseStyles,
                                         color: '#ffffff66'
                                     })
-                                }} />
+                                }} /> */}
                             </div>
                         </div>
 
@@ -207,8 +240,8 @@ const StudentSignup = () => {
                                 Graduation Class*
                             </label>
                             <div className='input_field mb-2'>
-
-                                <Select placeholder="Select Graduation Year" options={options2} theme={(theme) => ({
+                                <input  onBlur={(e) => setStudentDetails({...studentDetails, graduation:e.target.value })}  type="text" className='w-100 bg-transparent border-white' />
+                                {/* <Select placeholder="Select Graduation Year" options={options2} theme={(theme) => ({
                                     ...theme,
                                     borderRadius: 0,
                                     colors: {
@@ -262,16 +295,16 @@ const StudentSignup = () => {
                                         ...baseStyles,
                                         color: '#ffffff66'
                                     })
-                                }} />
+                                }} /> */}
                             </div>
                         </div>
                     </div>
 
                     <div className='sign-up d-flex flex-wrap align-items-center justify-content-between pb-4 mb-4'>
-                        <button className='commn-btn mb-4 mb-md-0'>
-                            <Link to={'/verifyemail'} className='text-decoration-none text-white'>
+                        <button className='commn-btn mb-4 mb-md-0' onClick={singupHandler}>
+                            {/* <Link to={'/verifyemail'} className='text-decoration-none text-white'> */}
                                 Sign Up
-                            </Link>
+                            {/* </Link> */}
                         </button>
 
                     </div>
