@@ -8,13 +8,13 @@ const StudentAlumni = () => {
                 Students & Alumni
             </h2>
 
-            <div>
+            <form>
                 <div className='sign-up p-2'>
                     <label htmlFor="signup" className='text-white'>
                         Enter your student email to sign up*
                     </label>
                     <div className='input_field mb-2'>
-                        <input type="mail" required id='signup' className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
+                        <input type="email" id='signup' className='w-100 bg-transparent border-white' placeholder='example@um.edu' required  />
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ const StudentAlumni = () => {
                         Already have an account? Sign in
                     </Link>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }

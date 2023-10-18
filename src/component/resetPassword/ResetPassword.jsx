@@ -57,7 +57,7 @@ const ResetPassword = () => {
                                 Email Address*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='emailAddress' type="text" className='w-100 bg-transparent border-white' placeholder='example@gmail.com' />
+                                <input id='emailAddress' type="email" className='w-100 bg-transparent border-white' placeholder='example@gmail.com' required/>
                             </div>
                         </div>
                     </>

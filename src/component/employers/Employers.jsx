@@ -14,7 +14,7 @@ const Employers = ({ email, isSubmitted, handleEmailChange, handleSignUpClick })
                         Enter your work email to sign up*
                     </label>
                     <div className='input_field mb-2'>
-                        <input id='email' type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' value={email} onChange={handleEmailChange} />
+                        <input id='email' type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' value={email} onChange={handleEmailChange} required />
                     </div>
                 </div>
 
@@ -36,6 +36,7 @@ const Employers = ({ email, isSubmitted, handleEmailChange, handleSignUpClick })
                     </div>
                 </div>
             </div>
+            
             <div className='sign-up d-flex flex-wrap align-items-center justify-content-between'>
                 <button className='commn-btn text-white border-0 mb-4 mb-md-0'>
                     <Link to={"/employesignup"} className='text-decoration-none text-white'>
@@ -46,6 +47,7 @@ const Employers = ({ email, isSubmitted, handleEmailChange, handleSignUpClick })
                     Already have an account? Sign in
                 </Link>
             </div>
+
         </div>
     )
 }

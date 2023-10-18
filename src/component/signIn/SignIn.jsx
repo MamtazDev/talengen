@@ -29,7 +29,7 @@ const SignIn = () => {
                                 Enter your Student Email*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='studentEmail' type="email" className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
+                                <input id='studentEmail' type="email" className='w-100 bg-transparent border-white' placeholder='example@um.edu' required />
                             </div>
                             <div className='input_field mb-2'>
                                 <label htmlFor="password" className=' fs-6 text-white mb-2'>
