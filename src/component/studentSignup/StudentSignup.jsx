@@ -166,7 +166,7 @@ const StudentSignup = () => {
                                 Confirm Password*
                             </label>
                             <div className='input_field mb-2'>
-                                <input type="text" className='w-100 bg-transparent border-white' />
+                                <input type="password" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 

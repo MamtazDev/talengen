@@ -23,13 +23,13 @@ const StudentAlumni = () => {
                 Students & Alumni
             </h2>
 
-            <div>
+            <form>
                 <div className='sign-up p-2'>
                     <label htmlFor="signup" className='text-white'>
                         Enter your student email to sign up*
                     </label>
                     <div className='input_field mb-2'>
-                        <input type="mail" onChange={(e) => setEmail(e.target.value)} required id='signup' className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
+                        <input type="mail" onChange={(e) => setEmail(e.target.value)} required id='signup' className='w-100 bg-transparent border-white'  placeholder='example@um.edu'  />
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ const StudentAlumni = () => {
                         Already have an account? Sign in
                     </Link>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }

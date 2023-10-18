@@ -32,7 +32,7 @@ const Employers = () => {
                         Enter your work email to sign up*
                     </label>
                     <div className='input_field mb-2'>
-                        <input onChange={(e) => setEmail(e.target.value)}  id='email' type="email" className='w-100 bg-transparent border-white' placeholder='example@talengen.com' value={email} />
+                        <input onChange={(e) => setEmail(e.target.value)}  id='email' type="email" className='w-100 bg-transparent border-white' required placeholder='example@talengen.com' value={email} />
                     </div>
                 </div>
 
@@ -54,6 +54,7 @@ const Employers = () => {
                     </div>
                 </div>
             </div>
+            
             <div className='sign-up d-flex flex-wrap align-items-center justify-content-between'>
                 <button className='commn-btn text-white border-0 mb-4 mb-md-0' onClick={singupHandler}>
                     {/* <Link to={"/employesignup"} className='text-decoration-none text-white'> */}
@@ -64,6 +65,7 @@ const Employers = () => {
                     Already have an account? Sign in
                 </Link>
             </div>
+
         </div>
     )
 }
