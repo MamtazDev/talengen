@@ -59,7 +59,11 @@ const ResetPassword = () => {
                             <div className='input_field mb-2'>
                                 <input id='emailAddress' type="email" className='w-100 bg-transparent border-white' placeholder='example@gmail.com' required/>
                             </div>
-                        </div>
+                            </div>
+
+                            <p className='fs-6 fw-normal text-white text-center'>
+                                We will send you an email that will allow you to reset your password.
+                            </p>
                     </>
                 )}
 

@@ -8,14 +8,17 @@ const VerifyEmail = () => {
         <div className='reset_wrapper'>
 
             <div style={{ marginTop: '200px' }}>
+
                 <div className='text-center'>
                     <h2 className='fs-3 fw-semibold text-white mb-4'>
                         Verify Your Email Address
                     </h2>
+
                     <p className='fs-6 fw-semibold text-white'>
                         You will need to verify your email address to complete registration
                     </p>
                 </div>
+
                 <div className='text-center'>
                     <Image width={'30%'} src={TeleGenLogo} alt='logo' />
                 </div>
@@ -32,6 +35,7 @@ const VerifyEmail = () => {
                         </Link>
                     </button>
                 </div>
+                
             </div>
         </div>
     )

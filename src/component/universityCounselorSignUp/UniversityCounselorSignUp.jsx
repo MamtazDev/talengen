@@ -1,9 +1,9 @@
 import React from 'react'
 import TeleGenLogo from '../../assets/telegen_logo.svg';
-import { Link } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const EmployesSignup = () => {
+const UniversityCounselorSignUp = () => {
     return (
         <div className='main_wrapper'>
             <div className="section-head text-center mt-3 mb-5">
@@ -19,7 +19,7 @@ const EmployesSignup = () => {
 
             <div className="student_alumni">
                 <h2 className='fs-4 fw-bold text-white mb-2'>
-                    Employers
+                    University Counselors
                 </h2>
 
                 <div>
@@ -32,7 +32,7 @@ const EmployesSignup = () => {
                         </div>
                         <div className='input_field mb-2'>
                             <label htmlFor="currentCompany" className=' fs-6 text-white'>
-                                Enter your Current Company*
+                                Enter your Current Institution Name*
                             </label>
                             <div className='input_field mb-2'>
                                 <input id='currentCompany' type="text" className='w-100 bg-transparent border-white' />
@@ -58,7 +58,7 @@ const EmployesSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="registrationNumber" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="registrationNumber" className=' fs-6 text-white'>
                                 Enter your Institution Registration Number*
                             </label>
                             <div className='input_field mb-2'>
@@ -83,4 +83,4 @@ const EmployesSignup = () => {
     )
 }
 
-export default EmployesSignup;
+export default UniversityCounselorSignUp

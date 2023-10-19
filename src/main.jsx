@@ -10,6 +10,7 @@ import StudentSignup from './component/studentSignup/StudentSignup';
 import EmployesSignup from './component/emplyesSignup/EmployesSignup';
 import VerifyEmail from './component/verifyEmail/VerifyEmail';
 import VerifySuccess from './component/verifySuccess/VerifySuccess';
+import UniversityCounselorSignUp from './component/universityCounselorSignUp/UniversityCounselorSignUp';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
 
   {
     path: '/signin',
-    element: <SignIn/>
+    element: <SignIn />
   },
 
   {
@@ -38,10 +39,15 @@ const router = createBrowserRouter([
   },
 
   {
+    path: '/universitycounselorsignup',
+    element: <UniversityCounselorSignUp />
+  },
+
+  {
     path: '/verifyemail',
     element: <VerifyEmail />
   },
-  
+
   {
     path: '/verifysuccess',
     element: <VerifySuccess />
