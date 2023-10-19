@@ -28,6 +28,7 @@ const EmployesSignup = () => {
         })
         .catch(error => {
           // Handle any errors that occurred during the POST request
+          // Handle any errors that occurred during the POST request
           console.error('Error making POST request:', error);
         });
 
