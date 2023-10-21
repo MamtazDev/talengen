@@ -66,7 +66,6 @@ const Employers = () => {
         { value: 'universityCounselors', label: 'University Counselors' },
     ]
 
-
     return (
         <div className="student_alumni">
             <h2 className="fs-4 fw-bold text-white mb-2">Employers & University Counselors</h2>
