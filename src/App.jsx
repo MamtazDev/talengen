@@ -39,6 +39,10 @@ const router = createBrowserRouter([
     path: '/employesignup',
     element: <EmployesSignup />
   },
+  {
+    path: '/universitysignup',
+    element: <UniversitySignup />
+  },
 
   {
     path: '/verifyemail',
