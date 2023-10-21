@@ -47,15 +47,15 @@ const SignIn = () => {
 
                     <div>
                         <div className='sign-up p-2'>
-                            <label htmlFor="studentEmail" className='text-white mb-2'>
+                            <label htmlFor="studentEmail" className='text-white'>
                                 Enter your Student Email*
                             </label>
                             <div className='input_field mb-2'>
                                 <input required  onBlur={(e) => setLoginState({ ...loginSate, email: e.target.value })}  id='studentEmail' type="email" className='w-100 bg-transparent border-white' placeholder='example@um.edu' />
                             </div>
                             <div className='input_field mb-2'>
-                                <label htmlFor="password" className=' fs-6 text-white mb-2'>
-                                    Password*
+                                <label htmlFor="password" className='fs-6 text-white'>
+                                    Enter your Student Email*
                                 </label>
                                 <div className='input_field mb-2'>
                                     <input  onBlur={(e) => setLoginState({ ...loginSate, password: e.target.value })}  id='password' type="password" className='w-100 bg-transparent border-white' />
@@ -75,13 +75,13 @@ const SignIn = () => {
                 </div>
 
                 <div className="student_alumni">
-                    <h2 className='fs-4 fw-bold text-white mb-2'>
+                    <h2 className='fs-4 fw-bold text-white mb-3'>
                         Employers & University Counselors
                     </h2>
 
                     <div>
                         <div className='ps-2'>
-                            <label htmlFor="workEmail" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="workEmail" className=' fs-6 text-white'>
                                 Enter your Work Email*
                             </label>
                             <div className='input_field mb-2'>
@@ -90,7 +90,7 @@ const SignIn = () => {
                         </div>
 
                         <div className='ps-2'>
-                            <label htmlFor="password2" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="password2" className=' fs-6 text-white'>
                                 Enter your Password*
                             </label>
                             <div className='input_field mb-2'>

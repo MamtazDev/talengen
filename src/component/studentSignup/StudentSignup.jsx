@@ -135,7 +135,7 @@ const StudentSignup = () => {
                 </h2>
 
                 <p className='fs-4 fw-semibold text-white'>
-                    Get Ready to Empower your Recruiting Journey
+                    Join TalenGen Now
                 </p>
             </div>
 
@@ -146,14 +146,14 @@ const StudentSignup = () => {
 
                 <div>
                     <div className='sign-up p-2'>
-                        <label htmlFor="signup" className='text-white mb-2'>
+                        <label htmlFor="signup" className='text-white'>
                             Enter your Preferred Name*
                         </label>
                         <div className='input_field mb-2'>
                             <input onBlur={(e) => setStudentDetails({...studentDetails, username:e.target.value })} type="text" className='w-100 bg-transparent border-white' />
                         </div>
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white'>
                                 Enter Password*
                             </label>
                             <div className='input_field mb-2'>
@@ -162,7 +162,7 @@ const StudentSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white'>
                                 Confirm Password*
                             </label>
                             <div className='input_field mb-2'>
@@ -171,7 +171,7 @@ const StudentSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white'>
                                 Current/Past Institution*
                             </label>
                             <div className='input_field mb-2'>
@@ -236,7 +236,7 @@ const StudentSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="signup" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="signup" className=' fs-6 text-white'>
                                 Graduation Class*
                             </label>
                             <div className='input_field mb-2'>

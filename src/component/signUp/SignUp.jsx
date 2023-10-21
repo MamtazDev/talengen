@@ -25,7 +25,7 @@ const SignUp = () => {
             <div className="section-head text-center mt-3 mb-5">
                 <Image src={TeleGenLogo} alt='logo' />
                 <h2 className='fs-2 fw-semibold text-white mb-4'>
-                    Take your First Step
+                    Sign In TalenGen
                 </h2>
 
                 <p className='fs-4 fw-semibold text-white'>

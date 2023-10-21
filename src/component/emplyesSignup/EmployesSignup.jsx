@@ -47,26 +47,26 @@ const EmployesSignup = () => {
                 </h2>
                 
                 <p className='fs-4 fw-semibold text-white'>
-                    Get Ready to Empower your Recruiting Journey
+                    Join TalenGen Now
                 </p>
             </div>
 
             <div className="student_alumni">
                 <h2 className='fs-4 fw-bold text-white mb-2'>
-                    Employers & University Counselors
+                    Employers
                 </h2>
 
                 <div>
                     <div className='sign-up p-2'>
-                        <label htmlFor="preferredName" className='text-white mb-2'>
+                        <label htmlFor="preferredName" className='text-white'>
                             Enter your Preferred Name*
                         </label>
                         <div className='input_field mb-2'>
                             <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, username: e.target.value })} id='preferredName' type="text" className='w-100 bg-transparent border-white' />
                         </div>
                         <div className='input_field mb-2'>
-                            <label htmlFor="currentCompany" className=' fs-6 text-white mb-2'>
-                                Enter your Current Company/Institution Name*
+                            <label htmlFor="currentCompany" className=' fs-6 text-white'>
+                                Enter your Current Company*
                             </label>
                             <div className='input_field mb-2'>
                                 <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, institude: e.target.value })} id='currentCompany' type="text" className='w-100 bg-transparent border-white' />
@@ -74,7 +74,7 @@ const EmployesSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="currentPosition" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="currentPosition" className=' fs-6 text-white'>
                                 Enter your Current Position*
                             </label>
                             <div className='input_field mb-2'>
@@ -83,7 +83,7 @@ const EmployesSignup = () => {
                         </div>
 
                         <div className='input_field mb-2'>
-                            <label htmlFor="preferredContact" className=' fs-6 text-white mb-2'>
+                            <label htmlFor="preferredContact" className=' fs-6 text-white'>
                                 Enter your Preferred Contact Number*
                             </label>
                             <div className='input_field mb-2'>
@@ -93,7 +93,7 @@ const EmployesSignup = () => {
 
                         <div className='input_field mb-2'>
                             <label htmlFor="registrationNumber" className=' fs-6 text-white mb-2'>
-                                Enter your Company/Institution Registration Number*
+                                Enter your Institution Registration Number*
                             </label>
                             <div className='input_field mb-2'>
                                 <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, registrationNo: e.target.value })} id='registrationNumber' type="number" className='w-100 bg-transparent border-white' />
