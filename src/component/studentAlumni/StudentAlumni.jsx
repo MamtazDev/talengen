@@ -24,11 +24,24 @@ const StudentAlumni = () => {
   const [email, setEmail] = useState(null);
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   const singupHandler = () => {
     console.log("student email:", email);
     localStorage.setItem("student", email);
     navigate("/studentsignup");
   };
+=======
+    // const [email, setEmail] = useState(null)
+    const navigate = useNavigate()
+
+
+    const singupHandler = () => {
+        console.log("student email:",  email)
+        localStorage.setItem('student', email)
+        navigate('/studentsignup');
+    }
+
+>>>>>>> 908f3c6cfad9f508d68d3deca98bac3d5dca15f1
 
   return (
     <div className="student_alumni">

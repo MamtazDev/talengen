@@ -38,7 +38,7 @@ const EmployesSignup = () => {
                 <h2 className='fs-2 fw-semibold text-white mb-4'>
                     Sign In TalenGen
                 </h2>
-
+                
                 <p className='fs-4 fw-semibold text-white'>
                     Join TalenGen Now
                 </p>
@@ -55,14 +55,14 @@ const EmployesSignup = () => {
                             Enter your Preferred Name*
                         </label>
                         <div className='input_field mb-2'>
-                            <input id='preferredName' type="text" className='w-100 bg-transparent border-white' />
+                            <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, username: e.target.value })} id='preferredName' type="text" className='w-100 bg-transparent border-white' />
                         </div>
                         <div className='input_field mb-2'>
                             <label htmlFor="currentCompany" className=' fs-6 text-white'>
                                 Enter your Current Company*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='currentCompany' type="text" className='w-100 bg-transparent border-white' />
+                                <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, institude: e.target.value })} id='currentCompany' type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@ const EmployesSignup = () => {
                                 Enter your Current Position*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='currentPosition' type="text" className='w-100 bg-transparent border-white' />
+                                <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, position: e.target.value })} id='currentPosition' type="text" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -80,7 +80,7 @@ const EmployesSignup = () => {
                                 Enter your Preferred Contact Number*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='preferredContact' type="number" className='w-100 bg-transparent border-white' />
+                                <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, contact: e.target.value })} id='preferredContact' type="number" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@ const EmployesSignup = () => {
                                 Enter your Institution Registration Number*
                             </label>
                             <div className='input_field mb-2'>
-                                <input id='registrationNumber' type="number" className='w-100 bg-transparent border-white' />
+                                <input onBlur={(e) => setEmployeeDetails({ ...employeeDetails, registrationNo: e.target.value })} id='registrationNumber' type="number" className='w-100 bg-transparent border-white' />
                             </div>
                         </div>
 
@@ -97,11 +97,11 @@ const EmployesSignup = () => {
                     </div>
 
                     <div className='sign-up d-flex flex-wrap align-items-center justify-content-between pb-4 mb-4'>
-                        <button className='commn-btn mb-4 mb-md-0'>
-                            <Link to={'/verifyemail'} className='text-decoration-none text-white'>
-                                Sign Up
-                            </Link>
-                        </button>
+                        <button className='commn-btn mb-4 mb-md-0' onClick={singupHandler}>
+                            {/* <Link to={'/verifyemail'} className='text-decoration-none text-white'> */}
+                            Sign Up
+                            {/* </Link> */}
+                        {/* </button>
 
                     </div>
                 </div> */}

@@ -23,6 +23,8 @@ const VerifySuccess = () => {
                 <div className='text-center'>
                     <button className='commn-btn mb-4 mb-md-0'>
                         CONFIRM EMAIL
+
+                        
                     </button>
                 </div>
             </div>
