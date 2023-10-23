@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import React, { useContext } from 'react';
+>>>>>>> 908f3c6cfad9f508d68d3deca98bac3d5dca15f1
 =======
 import React, { useContext } from 'react';
 >>>>>>> 908f3c6cfad9f508d68d3deca98bac3d5dca15f1

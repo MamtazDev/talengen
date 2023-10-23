@@ -34,6 +34,16 @@ const StudentAlumni = () => {
     // const [email, setEmail] = useState(null)
     const navigate = useNavigate()
 
+    // const [email, setEmail] = useState(null)
+    const navigate = useNavigate()
+
+
+    const singupHandler = () => {
+        console.log("student email:",  email)
+        localStorage.setItem('student', email)
+        navigate('/studentsignup');
+    }
+
 
     const singupHandler = () => {
         console.log("student email:",  email)
