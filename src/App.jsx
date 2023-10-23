@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { Provider } from 'react-redux';
-import { store } from './store/store';
+// import { Provider } from 'react-redux';
+// import { store } from './store/store';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import SignUp from './component/signUp/SignUp';
@@ -11,7 +11,7 @@ import StudentSignup from './component/studentSignup/StudentSignup';
 import EmployesSignup from './component/emplyesSignup/EmployesSignup';
 import VerifyEmail from './component/verifyEmail/VerifyEmail';
 import VerifySuccess from './component/verifySuccess/VerifySuccess';
-import {  useState } from 'react';
+
 import UniversitySignup from './component/emplyesSignup/UniversitySignup';
 
 
@@ -64,9 +64,9 @@ function App() {
 
   return (
     <>
-      <Provider store={store}>
+      <div>
         <RouterProvider router={router} />
-      </Provider>
+      </div>
     </>
 
     
