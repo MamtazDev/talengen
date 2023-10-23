@@ -1,4 +1,3 @@
-import React from 'react';
 import { Image } from 'react-bootstrap';
 import TeleGenLogo from '../../assets/telegen_logo.svg';
 import './signUp.css';
