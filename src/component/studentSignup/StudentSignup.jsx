@@ -97,7 +97,6 @@ const options2 = [
 
 
 const StudentSignup = () => {
-
     const [studentDetails, setStudentDetails ] = useState({
         username:"",
         password:"",
@@ -112,7 +111,7 @@ const StudentSignup = () => {
     const singupHandler = () => {
         console.log("studentDetails",studentDetails);
 
-        axios.post('http://localhost:8000/api/v1/users/signup', studentDetails)
+        axios.post('https://talengen-server.onrender.com/api/v1/users/signup', studentDetails)
         .then(response => {
           // Handle the successful response here
           console.log('POST request successful:', response);

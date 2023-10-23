@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
 import axios from 'axios';
 
-const EmployesSignup = () => {
+const UniversitySignup = () => {
 
     const navigate = useNavigate()
     const employee = JSON.parse(localStorage.getItem('employe'));
@@ -117,4 +117,4 @@ const EmployesSignup = () => {
     )
 }
 
-export default EmployesSignup;
+export default UniversitySignup;

@@ -12,6 +12,7 @@ import EmployesSignup from './component/emplyesSignup/EmployesSignup';
 import VerifyEmail from './component/verifyEmail/VerifyEmail';
 import VerifySuccess from './component/verifySuccess/VerifySuccess';
 import {  useState } from 'react';
+import UniversitySignup from './component/emplyesSignup/UniversitySignup';
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/employesignup',
     element: <EmployesSignup />
+  },
+  {
+    path: '/universitysignup',
+    element: <UniversitySignup />  
   },
 
   {
