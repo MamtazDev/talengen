@@ -2,36 +2,23 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const StudentAlumni = () => {
-  // const history = useNavigate();
-  // const [email, setEmail] = useState('');
-  // const [redirectToSignup, setRedirectToSignup] = useState(false);
 
-  // const handleSignUp = () => {
-  //     // Check if the email is valid (you can use a regular expression or any validation logic)
-  //     const emailIsValid = /\S+@\S+\.\S+/.test(email);
-  //     if (emailIsValid) {
-  //         setRedirectToSignup(true);
-  //     } else {
-  //         alert('Please enter a valid email address.');
-  //     }
-  // };
-
-  // useEffect(() => {
-  //     if (redirectToSignup) {
-  //         history('/studentsignup');
-  //     }
-  // })
   const [email, setEmail] = useState(null);
   const navigate = useNavigate();
 
   const singupHandler = () => {
     console.log("student email:", email);
-    localStorage.setItem("student", email);
-    navigate("/studentsignup");
+    const emailIsValid = /\S+@\S+\.\S+/.test(email);
+    if (emailIsValid) {
+      localStorage.setItem("student", email);
+      navigate("/studentsignup");
+    } else {
+      alert("Please enter a valid email address.");
+    }
   };
 
   return (
-    <div className="student_alumni">
+    <form className="student_alumni">
       <h2 className="fs-4 fw-bold text-white mb-2">Students & Alumni</h2>
 
       <div className="sign-up p-2">
@@ -62,7 +49,7 @@ const StudentAlumni = () => {
           Already have an account? Sign in
         </Link>
       </div>
-    </div>
+    </form>
   );
 };
 

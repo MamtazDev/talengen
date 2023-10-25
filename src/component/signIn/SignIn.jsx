@@ -11,7 +11,7 @@ const SignIn = () => {
   });
 
   const singinHandler = () => {
-    // console.log("loginSate", loginSate);
+    console.log("loginSate", loginSate);
     axios
       .post("http://localhost:8000/api/v1/users/login", loginSate)
       .then((response) => {
@@ -34,66 +34,50 @@ const SignIn = () => {
           </p>
         </div>
 
-        axios.post('https://talengen-server.onrender.com/api/v1/users/login', loginSate)
-        // axios.post('https://talengen-server.onrender.com/api/v1/users/login', loginSate)
-        .then(response => {
-          // Handle the successful response here
-          console.log('POST request successful:', response);
-        })
-        .catch(error => {
-          // Handle any errors that occurred during the POST request
-          console.error('Error making POST request:', error);
-        });
-    }
-
-          <div>
-            <div className="sign-up p-2">
-              <label htmlFor="studentEmail" className="text-white">
-                Enter your Student Email*
+        <div>
+          <div className="sign-up p-2">
+            <label htmlFor="studentEmail" className="text-white">
+              Enter your Student Email*
+            </label>
+            <div className="input_field mb-2">
+              <input
+                onBlur={(e) =>
+                  setLoginState({ ...loginSate, email: e.target.value })
+                }
+                id="studentEmail"
+                type="email"
+                className="w-100 bg-transparent border-white"
+                placeholder="example@um.edu"
+                required
+              />
+            </div>
+            <div className="input_field mb-2">
+              <label htmlFor="password" className="fs-6 text-white">
+                Enter your Student Password*
               </label>
               <div className="input_field mb-2">
                 <input
                   onBlur={(e) =>
-                    setLoginState({ ...loginSate, email: e.target.value })
+                    setLoginState({ ...loginSate, password: e.target.value })
                   }
-                  id="studentEmail"
-                  type="email"
+                  id="password"
+                  type="password"
                   className="w-100 bg-transparent border-white"
-                  placeholder="example@um.edu"
-                  required
                 />
               </div>
-              <div className="input_field mb-2">
-                <label htmlFor="password" className="fs-6 text-white">
-                  Enter your Student Password*
-                </label>
-                <div className="input_field mb-2">
-                  <input
-                    onBlur={(e) =>
-                      setLoginState({ ...loginSate, password: e.target.value })
-                    }
-                    id="password"
-                    type="password"
-                    className="w-100 bg-transparent border-white"
-                  />
-                </div>
-              </div>
             </div>
+          </div>
 
-            <div className="sign-up d-flex flex-wrap align-items-center justify-content-between border-bottom pb-4 mb-4">
-              <button
-                className="commn-btn mb-4 mb-md-0"
-                onClick={singinHandler}
-              >
-                Sign In
-              </button>
-              <Link
-                to={"/resetpassword"}
-                className="text-decoration-none text-white"
-              >
-                Forgot your password?
-              </Link>
-            </div>
+          <div className="sign-up d-flex flex-wrap align-items-center justify-content-between border-bottom pb-4 mb-4">
+            <button className="commn-btn mb-4 mb-md-0" onClick={singinHandler}>
+              Sign In
+            </button>
+            <Link
+              to={"/resetpassword"}
+              className="text-decoration-none text-white"
+            >
+              Forgot your password?
+            </Link>
           </div>
         </div>
 
@@ -109,7 +93,7 @@ const SignIn = () => {
               </label>
               <div className="input_field mb-2">
                 <input
-                  onBlur={(e) =>
+                  onChange={(e) =>
                     setLoginState({ ...loginSate, email: e.target.value })
                   }
                   id="workEmail"
@@ -126,7 +110,7 @@ const SignIn = () => {
               </label>
               <div className="input_field mb-2">
                 <input
-                  onBlur={(e) =>
+                  onChange={(e) =>
                     setLoginState({ ...loginSate, password: e.target.value })
                   }
                   id="password2"
