@@ -13,7 +13,7 @@ const SignIn = () => {
   const singinHandler = () => {
     console.log("loginSate", loginSate);
     axios
-      .post("http://localhost:8000/api/v1/users/login", loginSate)
+      .post("https://talengen-server-pk7j.onrender.com/api/v1/users/login", loginSate)
       .then((response) => {
         console.log("Logged in successfull", response);
       })

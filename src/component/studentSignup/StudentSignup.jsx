@@ -122,7 +122,7 @@ const StudentSignup = () => {
   const singupHandler = () => {
     console.log("studentDetails", studentDetails);
     axios
-      .post("http://localhost:8000/api/v1/users/signup", studentDetails)
+      .post("https://talengen-server-pk7j.onrender.com/api/v1/users/signup", studentDetails)
       .then((response) => {
         console.log("POST request successful:", response);
         navigate("/verifyemail");
