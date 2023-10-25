@@ -11,7 +11,7 @@ const ResetPassword = () => {
   const navigate = useNavigate();
   const handleResetPassword = () => {
     axios
-      .post("https://talengen-server-pk7j.onrender.com/api/v1/users/forgot-password", {
+      .post("https://talengen-server.onrender.com/api/v1/users/forgot-password", {
         email: email,
       })
       .then((response) => {

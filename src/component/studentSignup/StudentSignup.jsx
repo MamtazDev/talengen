@@ -108,6 +108,7 @@ const options2 = [
 const StudentSignup = () => {
   // api integration
   const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   const [selectedComponent, setSelectedComponent] = useState(null);
 
   const [studentDetails, setStudentDetails] = useState({
@@ -122,7 +123,10 @@ const StudentSignup = () => {
   const singupHandler = () => {
     console.log("studentDetails", studentDetails);
     axios
-      .post("https://talengen-server-pk7j.onrender.com/api/v1/users/signup", studentDetails)
+      .post(
+        "https://talengen-server.onrender.com/api/v1/users/signup",
+        studentDetails
+      )
       .then((response) => {
         console.log("POST request successful:", response);
         navigate("/verifyemail");
@@ -146,8 +150,6 @@ const StudentSignup = () => {
     }
     setSelectedComponent(null);
   };
-
-  console.log(selectedComponent);
 
   return (
     <div className="main_wrapper">

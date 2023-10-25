@@ -22,7 +22,7 @@ const ResetPasswordVIew = () => {
 
     axios
       .post(
-        `https://talengen-server-pk7j.onrender.com/api/v1/users/password/change-password/${email}`,
+        `https://talengen-server.onrender.com/api/v1/users/password/change-password/${email}`,
         requestData
       )
       .then((response) => {

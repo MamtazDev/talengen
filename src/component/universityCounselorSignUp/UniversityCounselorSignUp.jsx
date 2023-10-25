@@ -81,7 +81,7 @@ const UniversityCounselorSignUp = () => {
     console.log("uniCounsellorDetails", uniCounsellorDetails);
 
     axios
-      .post("https://talengen-server-pk7j.onrender.com/api/v1/users/signup", uniCounsellorDetails)
+      .post("https://talengen-server.onrender.com/api/v1/users/signup", uniCounsellorDetails)
       .then((response) => {
         console.log("POST request successful:", response);
         navigate("/verifyemail");
