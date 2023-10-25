@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import TeleGenLogo from '../../assets/telegen_logo.svg';
 import { Image } from 'react-bootstrap';

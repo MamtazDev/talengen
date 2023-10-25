@@ -34,7 +34,7 @@ const SignIn = () => {
           </p>
         </div>
 
-        axios.post('https://talengen-server.onrender.com/api/v1/users/login', loginSate)
+   {/*      axios.post('https://talengen-server.onrender.com/api/v1/users/login', loginSate)
         // axios.post('https://talengen-server.onrender.com/api/v1/users/login', loginSate)
         .then(response => {
           // Handle the successful response here
@@ -44,7 +44,7 @@ const SignIn = () => {
           // Handle any errors that occurred during the POST request
           console.error('Error making POST request:', error);
         });
-    }
+    } */}
 
           <div>
             <div className="sign-up p-2">
@@ -152,7 +152,7 @@ const SignIn = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };

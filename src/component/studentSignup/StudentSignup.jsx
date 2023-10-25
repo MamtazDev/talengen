@@ -106,17 +106,6 @@ const options2 = [
 ];
 
 const StudentSignup = () => {
-<<<<<<< HEAD
-    const [studentDetails, setStudentDetails ] = useState({
-        username:"",
-        password:"",
-        institude: "",
-        graduation:"",
-        role : "Student",
-        email: localStorage.getItem("student")
-    })
-    const navigate = useNavigate()
-=======
   // api integration
   const navigate = useNavigate();
   const [selectedComponent, setSelectedComponent] = useState(null);
@@ -129,7 +118,6 @@ const StudentSignup = () => {
     role: "Student",
     email: localStorage.getItem("student"),
   });
->>>>>>> 0e61310ebb6ea9fbb93c1dd2ad365853b3a4f0ed
 
   const singupHandler = () => {
     console.log("studentDetails", studentDetails);
@@ -144,22 +132,6 @@ const StudentSignup = () => {
       });
   };
 
-<<<<<<< HEAD
-    const singupHandler = () => {
-        console.log("studentDetails",studentDetails);
-
-        axios.post('https://talengen-server.onrender.com/api/v1/users/signup', studentDetails)
-        .then(response => {
-          // Handle the successful response here
-          console.log('POST request successful:', response);
-        })
-        .catch(error => {
-          // Handle any errors that occurred during the POST request
-          console.error('Error making POST request:', error);
-        });
-
-        navigate('/verifyemail');
-=======
   const handleCategoryChange = (selectedOption, selectName) => {
     if (selectName === "institutionSelect") {
       setStudentDetails((prevStudentDetails) => ({
@@ -171,7 +143,6 @@ const StudentSignup = () => {
         ...prevStudentDetails,
         graduation: selectedOption.value,
       }));
->>>>>>> 0e61310ebb6ea9fbb93c1dd2ad365853b3a4f0ed
     }
     setSelectedComponent(null);
   };
